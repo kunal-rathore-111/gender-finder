@@ -1,0 +1,69 @@
+@import "tailwindcss";
+
+:root {
+  --background: #F2F2F2;
+  --foreground: #000000;
+  --accent: #FF5733;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-accent: var(--accent);
+  --font-sans: var(--font-inter);
+  --font-oswald: var(--font-oswald);
+}
+
+@layer utilities {
+  .font-oswald {
+    font-family: var(--font-oswald);
+  }
+
+  .font-system {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .brutalist-shadow {
+    box-shadow: 6px 6px 0px 0px #000000;
+  }
+
+  /* Background Pattern Utilities */
+  .bg-grid-pattern {
+    background-image:
+      radial-gradient(#000000 1px, transparent 1px),
+      linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+    background-size: 20px 20px, 40px 40px, 40px 40px;
+    background-position: 0 0, 0 0, 0 0;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+
+  /* Base Background Interest */
+  background-image: radial-gradient(#000000 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+}
+
+/* Doodle animations */
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+.animate-float {
+  animation: float 4s ease-in-out infinite;
+}
