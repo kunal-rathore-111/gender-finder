@@ -1,4 +1,4 @@
-# 🔍 Gender Finder
+# 🔍 Gender By Name
 
 A modern, brutalist-style web application that predicts gender based on names using the Genderize.io API. Built with Next.js 16 and React 19, featuring a bold and distinctive design aesthetic.
 
@@ -7,7 +7,7 @@ A modern, brutalist-style web application that predicts gender based on names us
 - **Real-time Gender Prediction**: Instantly predict gender based on first names
 - **Confidence Scoring**: Display probability percentages with confidence level descriptions
 - **Input Validation**: Client-side validation using Zod to ensure proper name format
-- **Brutalist Design**: Bold, high-contrast UI with distinctive shadows and typography
+- **Design**: Bold, high-contrast UI with distinctive shadows and typography
 - **Responsive Layout**: Fully responsive design that works seamlessly across all devices
 - **Server Components**: Leverages Next.js App Router with React Server Components for optimal performance
 - **Error Handling**: Graceful error handling with user-friendly messages
